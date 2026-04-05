@@ -117,7 +117,11 @@ export default function Navbar() {
             {/* LOGO */}
             <Link href="#" className="flex items-center space-x-2">
               <div className="w-fit h-fit rounded-xl flex items-center justify-center">
-                <img src="Rupee4Uimg.png" alt="" className="sm:w-24 h-10" />
+                <img
+                  src="Rupee4Uimg.png"
+                  alt=""
+                  className="sm:w-24 h-10 md:w-fit md:h-fit"
+                />
               </div>
               {/* <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
                 Rupee4U
