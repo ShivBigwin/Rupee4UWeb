@@ -15,7 +15,7 @@ export default function FairPracticePolicy() {
       title: "Introduction",
       content: `
         <img src="/policy/md.png" alt="" />
-        <p class="mt-4">Rupee4U Private Limited (“Midha” or “the Company”) is a Non-Banking Financial Company (NBFC), registered with the Reserve Bank of India (RBI) as a non-deposit taking, non-systemically important NBFC. The Company is primarily engaged in providing personal loans, MSME finance, and other financial services.</p></br>
+        <p class="mt-4">Rupee4U Private Limited is a Non-Banking Financial Company (NBFC), registered with the Reserve Bank of India (RBI) as a non-deposit taking, non-systemically important NBFC. The Company is primarily engaged in providing personal loans, MSME finance, and other financial services.</p></br>
         
         <p>The Policy has been formulated in accordance with the guidelines issued by the Reserve Bank of India for Non-Banking Financial Companies (NBFCs). This Policy is applicable to all Rupee4U's products and services.</p>
       `,
@@ -32,12 +32,12 @@ export default function FairPracticePolicy() {
        
       `,
     },
-    definitions: {
-      title: "Definitions",
-      content: `
-         <img src="/policy/defination.png" alt="" />
-      `,
-    },
+    // definitions: {
+    //   title: "Definitions",
+    //   content: `
+    //      <img src="/policy/defination.png" alt="" />
+    //   `,
+    // },
 
     commitments: {
       title: "Key Commitments",
@@ -149,7 +149,7 @@ export default function FairPracticePolicy() {
       title: "Grievance Redressal Mechanism",
       content: `
         <div class="space-y-4">
-          <p>MIDHA shall establish a robust grievance redressal framework.</p>
+          <p>Rupee4u shall establish a robust grievance redressal framework.</p>
            <p>Key highlights include:</p>
           
           <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
@@ -337,7 +337,7 @@ export default function FairPracticePolicy() {
                       href="mailto:grievance@salaryanytime.com"
                       className="underline font-semibold"
                     >
-                      care@salaryanytime.com
+                      care@rupee4u.com
                     </a>
                   </p>
                 </div>

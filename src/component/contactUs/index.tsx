@@ -1,51 +1,59 @@
 "use client";
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaClock, FaHeadset, FaShieldAlt } from 'react-icons/fa';
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaClock,
+  FaHeadset,
+  FaShieldAlt,
+} from "react-icons/fa";
 
 const contactCards = [
   {
     icon: "/icons/contact-phone.png",
     title: "Phone Support",
     description: "Speak directly with our financial experts",
-    details: "+91-7290999972",
+    details: "+91-9999969918",
     gradient: "from-white to-blue-50",
-    action: "tel:+91-7290999972",
-    actionText: "Call Now"
+    action: "tel:+91 9999969918",
+    actionText: "Call Now",
   },
   {
     icon: "/icons/contact-email.png",
     title: "Email Support",
     description: "Get detailed assistance via email",
-    details: "care@agrimfincap.com",
+    details: "info@rupee4u.com",
     gradient: "from-white to-blue-50",
-    action: "info@midhacapitallendings.in",
-    actionText: "Send Email"
+    action: "info@rupee4u.com",
+    actionText: "Send Email",
   },
   {
     icon: "/icons/contact-location.png",
     title: "Office Location",
     description: "Visit our headquarters",
-    details: "3rd, 317, Usha Kiran Building, Azadpur Road, Azadpur, New Delhi, North West Delhi, Delhi, 110033.",
+    details:
+      "Office No. S6-S7 Sacred World Mall, Wanwadi, near Jagtap Chowk, Pune, Maharashtra 411040",
     gradient: "from-white to-blue-50",
     action: "https://maps.google.com/",
-    actionText: "View on Map"
-  }
+    actionText: "View on Map",
+  },
 ];
 
 const supportHours = [
   { day: "Monday - Friday", hours: "9:00 AM - 7:00 PM" },
   { day: "Saturday", hours: "10:00 AM - 5:00 PM" },
-  { day: "Sunday", hours: "Emergency Support Only" }
+  { day: "Sunday", hours: "Emergency Support Only" },
 ];
 
 export default function ContactUs() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
@@ -55,7 +63,7 @@ export default function ContactUs() {
     setIsSubmitting(true);
 
     // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    await new Promise((resolve) => setTimeout(resolve, 1500));
 
     setIsSubmitting(false);
     setSubmitSuccess(true);
@@ -64,19 +72,23 @@ export default function ContactUs() {
     setTimeout(() => {
       setSubmitSuccess(false);
       setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        subject: '',
-        message: ''
+        name: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: "",
       });
     }, 3000);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >,
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -86,9 +98,9 @@ export default function ContactUs() {
       opacity: 1,
       transition: {
         staggerChildren: 0.2,
-        delayChildren: 0.1
-      }
-    }
+        delayChildren: 0.1,
+      },
+    },
   };
 
   const itemVariants = {
@@ -98,9 +110,9 @@ export default function ContactUs() {
       opacity: 1,
       transition: {
         duration: 0.6,
-        ease: "easeOut" as const
-      }
-    }
+        ease: "easeOut" as const,
+      },
+    },
   };
 
   const cardHoverVariants = {
@@ -109,9 +121,9 @@ export default function ContactUs() {
       scale: 1.02,
       transition: {
         duration: 0.3,
-        ease: "easeInOut" as const
-      }
-    }
+        ease: "easeInOut" as const,
+      },
+    },
   };
 
   return (
@@ -120,13 +132,16 @@ export default function ContactUs() {
       <div className="absolute inset-0 z-0">
         {/* Geometric Pattern */}
         <div className="absolute inset-0 opacity-[0.02]">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `
               radial-gradient(circle at 20% 30%, #3b82f6 1px, transparent 1px),
               radial-gradient(circle at 80% 70%, #10b981 1px, transparent 1px)
             `,
-            backgroundSize: '60px 60px'
-          }} />
+              backgroundSize: "60px 60px",
+            }}
+          />
         </div>
 
         {/* Gradient Orbs */}
@@ -143,7 +158,7 @@ export default function ContactUs() {
                 left: `${Math.random() * 100}%`,
                 top: `${Math.random() * 100}%`,
                 animationDuration: `${3 + Math.random() * 4}s`,
-                animationDelay: `${Math.random() * 2}s`
+                animationDelay: `${Math.random() * 2}s`,
               }}
             />
           ))}
@@ -161,20 +176,21 @@ export default function ContactUs() {
         >
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-linear-to-r from-orange-100 to-pink-100 backdrop-blur-sm border border-orange-200 mb-6 shadow-sm">
             <div className="w-2 h-2 rounded-full bg-linear-to-r from-orange-500 to-pink-600 animate-pulse mr-2" />
-            <span className="text-orange-700 text-sm font-semibold">Get in Touch</span>
+            <span className="text-orange-700 text-sm font-semibold">
+              Get in Touch
+            </span>
           </div>
 
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-            <span className="text-gray-900">
-              Contact Our
-            </span>
+            <span className="text-gray-900">Contact Our</span>
             <span className="block bg-linear-to-r from-blue-800 via-blue-600 to-orange-600 bg-clip-text text-transparent">
               Support Team
             </span>
           </h2>
 
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Have a query or need assistance with your loan application? Our team is here to help you with quick, clear, and professional support.
+            Have a query or need assistance with your loan application? Our team
+            is here to help you with quick, clear, and professional support.
           </p>
         </motion.div>
 
@@ -194,7 +210,9 @@ export default function ContactUs() {
               className="group relative"
             >
               {/* Glow Effect */}
-              <div className={`absolute -inset-0.5 bg-linear-to-r ${card.gradient} rounded-3xl blur opacity-0 group-hover:opacity-20 transition-opacity duration-500`} />
+              <div
+                className={`absolute -inset-0.5 bg-linear-to-r ${card.gradient} rounded-3xl blur opacity-0 group-hover:opacity-20 transition-opacity duration-500`}
+              />
 
               {/* Card */}
               <div className="relative h-full bg-blue-800 backdrop-blur-sm border border-gray-200/80 rounded-3xl p-8 overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
@@ -204,9 +222,13 @@ export default function ContactUs() {
                   transition={{ type: "spring", stiffness: 300, damping: 20 }}
                   className="mb-6"
                 >
-                  <div className={`relative w-16 h-16 rounded-2xl bg-linear-to-br ${card.gradient} p-0.5 shadow-md`}>
+                  <div
+                    className={`relative w-16 h-16 rounded-2xl bg-linear-to-br ${card.gradient} p-0.5 shadow-md`}
+                  >
                     <div className="w-full h-full bg-blue-800 rounded-2xl flex items-center justify-center">
-                      <div className={`w-12 h-12 rounded-xl bg-linear-to-br ${card.gradient}/10 flex items-center justify-center`}>
+                      <div
+                        className={`w-12 h-12 rounded-xl bg-linear-to-br ${card.gradient}/10 flex items-center justify-center`}
+                      >
                         <img
                           src={card.icon}
                           alt={card.title}
@@ -222,28 +244,36 @@ export default function ContactUs() {
                   {card.title}
                 </h3>
 
-                <p className="text-white text-sm mb-4">
-                  {card.description}
-                </p>
+                <p className="text-white text-sm mb-4">{card.description}</p>
 
                 <div className="mb-8">
-                  <p className="text-white font-medium ">
-                    {card.details}
-                  </p>
+                  <p className="text-white font-medium ">{card.details}</p>
                 </div>
 
                 {/* Action Button */}
                 <motion.a
                   href={card.action}
-                  target={card.action.includes('http') ? '_blank' : '_self'}
-                  rel={card.action.includes('http') ? 'noopener noreferrer' : ''}
+                  target={card.action.includes("http") ? "_blank" : "_self"}
+                  rel={
+                    card.action.includes("http") ? "noopener noreferrer" : ""
+                  }
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className={`fixed bottom-4 left-4 inline-flex items-center justify-center px-6 py-3 rounded-xl bg-linear-to-r ${card.gradient} text-blue-800 font-semibold text-sm hover:shadow-lg transition-all duration-300 shadow-md`}
                 >
                   {card.actionText}
-                  <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  <svg
+                    className="w-4 h-4 ml-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
                   </svg>
                 </motion.a>
               </div>
@@ -272,8 +302,12 @@ export default function ContactUs() {
                     <FaHeadset className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-gray-900">Send us a Message</h3>
-                    <p className="text-gray-600">We'll respond within 24 hours</p>
+                    <h3 className="text-2xl font-bold text-gray-900">
+                      Send us a Message
+                    </h3>
+                    <p className="text-gray-600">
+                      We'll respond within 24 hours
+                    </p>
                   </div>
                 </div>
 
@@ -286,12 +320,26 @@ export default function ContactUs() {
                       className="text-center py-12"
                     >
                       <div className="w-20 h-20 rounded-full bg-gradient-to-r  from-blue-800 to-cyan-800 flex items-center justify-center mx-auto mb-6 shadow-lg">
-                        <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        <svg
+                          className="w-10 h-10 text-white"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
                         </svg>
                       </div>
-                      <h4 className="text-2xl font-bold text-gray-900 mb-3">Message Sent Successfully!</h4>
-                      <p className="text-gray-600">Our team will contact you shortly.</p>
+                      <h4 className="text-2xl font-bold text-gray-900 mb-3">
+                        Message Sent Successfully!
+                      </h4>
+                      <p className="text-gray-600">
+                        Our team will contact you shortly.
+                      </p>
                     </motion.div>
                   ) : (
                     <form onSubmit={handleSubmit} className="space-y-6">
@@ -353,10 +401,18 @@ export default function ContactUs() {
                             className="w-full px-4 py-3 rounded-xl bg-white backdrop-blur-sm border border-gray-300 text-gray-900 placeholder-gray-500 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100 transition-all duration-300 shadow-sm"
                           >
                             <option value="">Select a subject</option>
-                            <option value="loan-application">Loan Application</option>
-                            <option value="repayment-query">Repayment Query</option>
-                            <option value="technical-support">Technical Support</option>
-                            <option value="general-inquiry">General Inquiry</option>
+                            <option value="loan-application">
+                              Loan Application
+                            </option>
+                            <option value="repayment-query">
+                              Repayment Query
+                            </option>
+                            <option value="technical-support">
+                              Technical Support
+                            </option>
+                            <option value="general-inquiry">
+                              General Inquiry
+                            </option>
                             <option value="feedback">Feedback</option>
                           </select>
                         </div>
@@ -383,21 +439,46 @@ export default function ContactUs() {
                           disabled={isSubmitting}
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
-                          className={`px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold text-lg flex items-center shadow-lg hover:shadow-xl ${isSubmitting ? 'opacity-80 cursor-not-allowed' : ''}`}
+                          className={`px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold text-lg flex items-center shadow-lg hover:shadow-xl ${isSubmitting ? "opacity-80 cursor-not-allowed" : ""}`}
                         >
                           {isSubmitting ? (
                             <>
-                              <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" fill="none" viewBox="0 0 24 24">
-                                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-                                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+                              <svg
+                                className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                              >
+                                <circle
+                                  className="opacity-25"
+                                  cx="12"
+                                  cy="12"
+                                  r="10"
+                                  stroke="currentColor"
+                                  strokeWidth="4"
+                                />
+                                <path
+                                  className="opacity-75"
+                                  fill="currentColor"
+                                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"
+                                />
                               </svg>
                               Sending...
                             </>
                           ) : (
                             <>
                               Send Message
-                              <svg className="w-5 h-5 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                              <svg
+                                className="w-5 h-5 ml-3"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth={2}
+                                  d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                                />
                               </svg>
                             </>
                           )}
@@ -405,7 +486,9 @@ export default function ContactUs() {
 
                         <div className="flex items-center space-x-2">
                           <FaShieldAlt className="w-5 h-5 text-emerald-500" />
-                          <span className="text-gray-600 text-sm font-medium">Secure & Encrypted</span>
+                          <span className="text-gray-600 text-sm font-medium">
+                            Secure & Encrypted
+                          </span>
                         </div>
                       </div>
                     </form>
@@ -432,23 +515,31 @@ export default function ContactUs() {
                     <FaClock className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-gray-900">Support Hours</h3>
+                    <h3 className="text-2xl font-bold text-gray-900">
+                      Support Hours
+                    </h3>
                     <p className="text-gray-600">We're here when you need us</p>
                   </div>
                 </div>
 
                 <div className="space-y-4">
                   {supportHours.map((item, index) => (
-                    <div key={index} className="flex justify-between items-center py-3 border-b border-gray-200 last:border-0">
+                    <div
+                      key={index}
+                      className="flex justify-between items-center py-3 border-b border-gray-200 last:border-0"
+                    >
                       <span className="text-gray-700">{item.day}</span>
-                      <span className="text-gray-900 font-semibold">{item.hours}</span>
+                      <span className="text-gray-900 font-semibold">
+                        {item.hours}
+                      </span>
                     </div>
                   ))}
                 </div>
 
                 <div className="mt-6 p-4 rounded-xl bg-gradient-to-br from-emerald-50 to-teal-50 border border-emerald-200">
                   <p className="text-emerald-700 text-sm font-medium">
-                    <span className="font-bold">Emergency Support:</span> Available 24/7 for existing customers
+                    <span className="font-bold">Emergency Support:</span>{" "}
+                    Available 24/7 for existing customers
                   </p>
                 </div>
               </div>
@@ -458,7 +549,9 @@ export default function ContactUs() {
             <div className="relative group">
               <div className="absolute -inset-4 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-3xl blur-xl" />
               <div className="relative bg-white backdrop-blur-sm border border-gray-200/80 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Quick Answers</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                  Quick Answers
+                </h3>
 
                 <div className="space-y-4">
                   {[
@@ -466,7 +559,7 @@ export default function ContactUs() {
                     "What documents are required?",
                     "Loan approval timeline",
                     "Repayment options",
-                    "Interest rates & charges"
+                    "Interest rates & charges",
                   ].map((question, index) => (
                     <motion.a
                       key={index}
@@ -477,8 +570,18 @@ export default function ContactUs() {
                       <span className="text-gray-700 group-hover:text-gray-900 transition-colors duration-300 font-medium">
                         {question}
                       </span>
-                      <svg className="w-4 h-4 text-gray-400 group-hover:text-purple-600 transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      <svg
+                        className="w-4 h-4 text-gray-400 group-hover:text-purple-600 transition-colors duration-300"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M9 5l7 7-7 7"
+                        />
                       </svg>
                     </motion.a>
                   ))}
@@ -490,8 +593,18 @@ export default function ContactUs() {
                   className="inline-flex items-center justify-center w-full mt-6 px-6 py-3 rounded-xl bg-gradient-to-br from-gray-50 to-white border border-gray-300 text-gray-800 font-semibold hover:border-purple-300 hover:shadow-md transition-all duration-300"
                 >
                   View All FAQs
-                  <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  <svg
+                    className="w-4 h-4 ml-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
                   </svg>
                 </motion.a>
               </div>

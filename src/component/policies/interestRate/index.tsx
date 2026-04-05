@@ -265,7 +265,7 @@ export default function Interest_Rate_Policy() {
             <span className="font-bold">
               Regards,
               <br />
-              SALARY ANTYTIME Pvt. Ltd.
+              Rupee4u Pvt. Ltd.
             </span>
           </p>
           {/* Footer Note */}

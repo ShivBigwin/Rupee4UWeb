@@ -41,7 +41,7 @@ export default function Footer() {
 
   const policies = [
     // { title: "Interest Policy", href: "/policy/Interest_Rate_Policy.pdf" },
-    { title: "KYC Policy", href: "/policy/KYC_Policy.pdf" },
+    // { title: "KYC Policy", href: "/policy/KYC_Policy.pdf" },
     { title: "Interest Rate Policy", href: "/policy/interestRate" },
     { title: "Grievance Redressal Policy", href: "/policy/grievance" },
     { title: "Fair Practices Code", href: "/policy/fair" },
@@ -121,9 +121,12 @@ export default function Footer() {
             </motion.div>
 
             <p className="text-gray-600 mb-8 max-w-md leading-relaxed">
-              Your trusted partner for comprehensive financial solutions. We
+              {/* Your trusted partner for comprehensive financial solutions. We
               empower businesses and individuals with strategic financial
-              guidance and innovative solutions.
+              guidance and innovative solutions. */}
+              Rupee4u is acting solely in the capacity of a trademarked brand
+              name. All loan approval decisions and disbursals are exclusively
+              performed by Mayur Deep Ornaments Pvt. Ltd.
             </p>
 
             {/* Social Links */}
@@ -242,10 +245,10 @@ export default function Footer() {
                 <div>
                   <div className="text-gray-500 text-sm font-medium">Email</div>
                   <a
-                    href="info@midhacapitallendings.in"
+                    href="info@rupee4u.com"
                     className="text-gray-900 hover:text-blue-600 transition-colors duration-300 font-medium"
                   >
-                    info@midhacapitallendings.in
+                    info@rupee4u.com
                   </a>
                 </div>
               </motion.li>
@@ -276,9 +279,9 @@ export default function Footer() {
                   <div className="text-gray-700 text-sm leading-relaxed font-medium">
                     3rd, 317, Usha Kiran Building, Azadpur Road,
                     <br />
-                    Azadpur, New Delhi, North West Delhi,
+                    Wanwadi, near Jagtap Chowk, Pune,
                     <br />
-                    Delhi, 110033, India
+                    Maharashtra 411040,India.
                   </div>
                 </div>
               </motion.li>
@@ -328,7 +331,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-gray-500 text-sm text-center md:text-left">
             <p className="font-medium">
-              © {currentYear} Focus Capital Services Limited All rights
+              © {currentYear} © Copyright 2025 by Mayur Deep Ornaments Pvt.Ltd.
               reserved.
               <span className="hidden md:inline"> | </span>
               <span className="block md:inline mt-2 md:mt-0 md:ml-2">

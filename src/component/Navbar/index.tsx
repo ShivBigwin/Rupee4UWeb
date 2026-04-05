@@ -142,7 +142,7 @@ export default function Navbar() {
               ))}
 
               <a
-                // href="https://loanapply.salaryanytime.com"
+                href="https://loanapply.rupee4u.com/auth"
                 className="px-6 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold shadow-md hover:shadow-lg"
               >
                 Get Started

@@ -47,11 +47,9 @@ export default function Disclaimer() {
             <br />
             <p className="text-red-900">
               We are dedicated to conducting business with integrity and
-              upholding openness in all of our interactions. There are never any
-              up-front costs associated with loan applications or associated
-              services at Agarwal Assignments Pvt Ltd. Any demand for upfront
-              payment coming from unapproved sources is blatantly fraudulent and
-              goes against our policies.
+              upholding openness in all of our interactions. Any demand for
+              upfront payment coming from unapproved sources is blatantly
+              fraudulent and goes against our policies.
             </p>
             <br />
             <p className="text-red-900">
@@ -82,7 +80,7 @@ export default function Disclaimer() {
             <span className="font-bold">
               Regards,
               <br />
-              SALARY ANTYTIME Pvt. Ltd.
+              Rupee4u Pvt. Ltd.
             </span>
           </p>
           {/* Footer Note */}

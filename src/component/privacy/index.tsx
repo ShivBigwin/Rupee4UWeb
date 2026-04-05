@@ -54,15 +54,15 @@ export default function PrivacyPolicy() {
             ensure regulatory compliance, and foster trust in every interaction.
           </p>
           <p className="text-gray-700 mb-8 leading-relaxed">
-            This online payment system is provided by FOCUS CAPITAL SERVICES
-            LTD. The FOCUS CAPITAL SERVICES LTD may update these terms from time
-            to time and any changes will be effective immediately on being set
-            out on this portal. Please ensure that you are aware of the current
-            terms. The country of domicile of FOCUS CAPITAL SERVICES LTD is
-            India and legal jurisdiction is New Delhi, India. Please read these
-            terms carefully before using the online payment facility. Using the
-            Online payment facility on this website indicates that you accept
-            these terms. If you do not accept these terms do not use this
+            This online payment system is provided by Mayur Deep Ornaments
+            Pvt.Ltd. The Mayur Deep Ornaments Pvt.Ltd. may update these terms
+            from time to time and any changes will be effective immediately on
+            being set out on this portal. Please ensure that you are aware of
+            the current terms. The country of domicile of Mayur Deep Ornaments
+            Pvt.Ltd. is India and legal jurisdiction is New Delhi, India. Please
+            read these terms carefully before using the online payment facility.
+            Using the Online payment facility on this website indicates that you
+            accept these terms. If you do not accept these terms do not use this
             facility.
           </p>
 
@@ -79,7 +79,7 @@ export default function PrivacyPolicy() {
             {/* Refund Policy */}
             <PolicyCard
               title="Refund Policy :"
-              content="Refunds, if applicable, at the discretion of the Management, will only be made as per the sources of Net Banking/debit/credit card used for the original transaction. For the avoidance of doubt, nothing in this Policy shall require FOCUS CAPITAL SERVICES LTD to refund the Charges (or part thereof) unless such Charges (or part thereof) have previously been paid by the customer through online payment mode and the same has been credited into the accounts of FOCUS CAPITAL SERVICES LTD and has the approval of the Management for refund. The Refunded amount will be credited back to source account within 7 working days."
+              content="Refunds, if applicable, at the discretion of the Management, will only be made as per the sources of Net Banking/debit/credit card used for the original transaction. For the avoidance of doubt, nothing in this Policy shall require Mayur Deep Ornaments Pvt.Ltd. to refund the Charges (or part thereof) unless such Charges (or part thereof) have previously been paid by the customer through online payment mode and the same has been credited into the accounts of Mayur Deep Ornaments Pvt.Ltd. and has the approval of the Management for refund. The Refunded amount will be credited back to source account within 7 working days."
               linkText="Read More"
               pageSlug="policy/fair"
             />
@@ -87,7 +87,7 @@ export default function PrivacyPolicy() {
             {/* Cancel and Return Policy */}
             <PolicyCard
               title="Cancel and Return Policy :"
-              content="Cancel and Return, if applicable, at the discretion of the Management, will only be made as per the sources of Net Banking/debit/credit card used for the original transaction. For the avoidance of doubt, nothing in this Policy shall require FOCUS CAPITAL SERVICES LTD to Cancel and Return the Charges (or part thereof) unless such Charges (or part thereof) have previously been paid by the customer through online payment mode and the same has been credited into the accounts of FOCUS CAPITAL SERVICES LTD and has the approval of the Management for Cancel and Return. The cancellation and return will take up to 20 working days."
+              content="Cancel and Return, if applicable, at the discretion of the Management, will only be made as per the sources of Net Banking/debit/credit card used for the original transaction. For the avoidance of doubt, nothing in this Policy shall require Mayur Deep Ornaments Pvt.Ltd. to Cancel and Return the Charges (or part thereof) unless such Charges (or part thereof) have previously been paid by the customer through online payment mode and the same has been credited into the accounts of Mayur Deep Ornaments Pvt.Ltd. and has the approval of the Management for Cancel and Return. The cancellation and return will take up to 20 working days."
               linkText="Read More"
               pageSlug="policy/grievance"
             />
@@ -95,7 +95,7 @@ export default function PrivacyPolicy() {
             {/* Privacy Policy */}
             <PolicyCard
               title="Privacy Policy:"
-              content="This Privacy Policy applies to all of the Fees, Payment of Dues, Charges and related payments payable to FOCUS CAPITAL SERVICES LTD through online mode. Sometimes, we may post specific privacy notices to explain in more detail. If you have any questions about this Privacy Policy, please feel free to contact us through our email INFO@MIDHACAPITALLENDINGS.IN"
+              content="This Privacy Policy applies to all of the Fees, Payment of Dues, Charges and related payments payable to Mayur Deep Ornaments Pvt.Ltd. through online mode. Sometimes, we may post specific privacy notices to explain in more detail. If you have any questions about this Privacy Policy, please feel free to contact us through our email info@rupee4u.com"
               linkText="Read More"
               pageSlug="#"
             />
@@ -103,7 +103,7 @@ export default function PrivacyPolicy() {
             {/* Changes to our Privacy Policy: */}
             <PolicyCard
               title="Changes to our Privacy Policy:"
-              content="FOCUS CAPITAL SERVICES LTD reserves the entire right to modify / amend / remove this privacy statement anytime and without any reason. Nothing contained herein creates or is intended to create a contract/agreement between FOCUS CAPITAL SERVICES LTD and any user visiting the website or providing Identifying information of any kind."
+              content="Mayur Deep Ornaments Pvt.Ltd. reserves the entire right to modify / amend / remove this privacy statement anytime and without any reason. Nothing contained herein creates or is intended to create a contract/agreement between Mayur Deep Ornaments Pvt.Ltd. and any user visiting the website or providing Identifying information of any kind."
               linkText="Read More"
               pageSlug="#"
             />
@@ -111,7 +111,7 @@ export default function PrivacyPolicy() {
             {/* DND Policy: */}
             <PolicyCard
               title="DND Policy:"
-              content="If you wish to stop any further sms/email alerts/contacts from our side, all you need to do is to send an email to INFO@MIDHACAPITALLENDINGS.IN with your registered mobile number and you will be excluded from the ‘alerts list’."
+              content="If you wish to stop any further sms/email alerts/contacts from our side, all you need to do is to send an email to info@rupee4u.com with your registered mobile number and you will be excluded from the ‘alerts list’."
               linkText="Read More"
               pageSlug="#"
             />

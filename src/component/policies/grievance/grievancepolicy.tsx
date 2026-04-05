@@ -235,7 +235,7 @@ export default function GrievanceRedressalPolicy() {
             </div>
              <div class=" rounded-r-xl bg-gray-100 w-full">
              <h1 class="ml-8 mt-4 font-semibold ">E-Mail:</h1>
-             <p class="ml-8 mt-8 mb-4">INFO@MIDHACAPITALLENDINGS.IN</p>
+             <p class="ml-8 mt-8 mb-4">info@rupee4u.com</p>
              </div> 
             </div>
 
@@ -258,7 +258,7 @@ export default function GrievanceRedressalPolicy() {
             </div>
              <div class=" rounded-r-xl bg-gray-100 w-full">
              <h1 class="ml-8 mt-4 font-semibold ">E-Mail:</h1>
-             <p class="ml-8 mt-8 mb-4">INFO@MIDHACAPITALLENDINGS.IN</p>
+             <p class="ml-8 mt-8 mb-4">info@rupee4u.com</p>
              </div> 
             </div></div>
             </div>
@@ -306,7 +306,7 @@ export default function GrievanceRedressalPolicy() {
       title: "Recourse  to Reserve Bank Of India Ombudsman",
       content: `
         <div class="space-y-4">
-          <p>MIDHA shall establish a robust grievance redressal framework.</p>
+          <p>Rupee4u shall establish a robust grievance redressal framework.</p>
            <p>Key highlights include:</p>
           
           <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
@@ -551,10 +551,10 @@ export default function GrievanceRedressalPolicy() {
                     need assistance, please contact our Grievance Redressal
                     Officer at{" "}
                     <a
-                      href="mailto:INFO@MIDHACAPITALLENDINGS.IN"
+                      href="mailto:info@rupee4u.com"
                       className="underline font-semibold"
                     >
-                      INFO@MIDHACAPITALLENDINGS.IN
+                      info@rupee4u.com
                     </a>
                   </p>
                 </div>
